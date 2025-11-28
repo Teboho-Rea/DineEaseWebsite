@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DineEase | Contact & FAQ</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="fonts.googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">DineEase</div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html" class="nav-cta">Order Online</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <h1>Get In Touch & FAQs</h1>
+        <p>We are here to answer your questions and provide the best dining experience.</p>
+
+        <section id="contact-info-section">
+            <h2>Our Details</h2>
+            <div class="contact-info">
+                <p><strong>Location:</strong> 123 Restaurant St, Sandton, Johannesburg 54321</p>
+                <p><strong>Phone:</strong> (011) 123-4567</p>
+                <p><strong>Email:</strong> info@dineease.com</p>
+                <p><strong>Hours:</strong> Mon-Fri: 11 AM - 10 PM | Sat-Sun: 10 AM - 11 PM</p>
+            </div>
+            <div class="map-placeholder" style="margin-top: 2rem;">
+                <iframe src="../Assets/images/Sandton.gif" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section id="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form" class="advanced-contact-form"> 
+                
+                <div class="form-group-grid">
+                    <div>
+                        <label for="c-name">Full Name:*</label>
+                        <input type="text" id="c-name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="c-email">Email Address:*</label>
+                        <input type="email" id="c-email" name="email" required placeholder="you@example.com">
+                    </div>
+                </div>
+                
+                <label for="subject">Subject:*</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select an inquiry type</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Catering Services">Catering Services</option>
+                    <option value="Media/Press">Media/Press</option>
+                    <option value="Private Event Booking">Private Event Booking</option>
+                </select>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+
+                <label for="message">Message:*</label>
+                <textarea id="message" name="message" rows="6" required placeholder="How can we help you?"></textarea>
+
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
+
+        <section id="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                
+                <div class="faq-item">
+                    <button class="faq-question">Do you offer vegetarian or vegan options?</button>
+                    <div class="faq-answer">
+                        <p>Yes, we have a variety of delicious vegetarian and vegan dishes highlighted on our main menu page. Please ask your server for today's specials!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Do I need a reservation?</button>
+                    <div class="faq-answer">
+                        <p>Reservations are highly recommended, especially on weekends and for large parties. You can easily book a table through our <a href="reservations.html">Reservations page</a>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Do you cater for events?</button>
+                    <div class="faq-answer">
+                        <p>Yes, DineEase offers full-service catering for private events, corporate functions, and parties. Please fill out the contact form above with your event details, and our manager will get in touch.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DineEase. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+    
+    <script src="../JS/script.js"></script>
+</body>
+</html>

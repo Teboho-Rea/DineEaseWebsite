@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DineEase | Online Ordering</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="fonts.googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+   <header>
+        <nav>
+            <div class="logo">DineEase</div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="order.html" class="nav-cta">Order Online</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <h1>Online Ordering</h1>
+        <p>Browse our menu and place your order for pickup or delivery.</p>
+        
+        <div class="order-container">
+            <div class="menu-selection-area">
+            </div>
+            
+            <div class="cart-summary-area">
+                <h2>Your Order</h2>
+                <div id="cart-items">
+                    <p class="empty-cart-message">Your cart is empty.</p>
+                </div>
+                
+                <div class="order-summary">
+                    <p>Subtotal: <span id="subtotal">R 0.00</span></p>
+                    
+                    <div class="delivery-option">
+                        <input type="radio" id="pickup" name="fulfillment" value="pickup" checked>
+                        <label for="pickup">Store Pick Up (Free)</label>
+                    </div>
+                    <div class="delivery-option">
+                        <input type="radio" id="delivery" name="fulfillment" value="delivery">
+                        <label for="delivery">Delivery</label>
+                    </div>
+                    
+                    <div id="delivery-details" style="display: none;">
+                        <p>Delivery Fee: <span id="delivery-fee">R 0.00</span></p>
+                        <label for="delivery-address">Delivery Address:</label>
+                        <input type="text" id="delivery-address" placeholder="Enter your address...">
+                        <p class="delivery-note">Delivery is available within a limited radius.</p>
+                    </div>
+                    
+                    <p class="total-price">Total: <span id="total">R 0.00</span></p>
+                    
+                    <button id="checkout-btn" class="cta-button" disabled>Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="confirmation-popup" class="popup" style="display:none;">
+            <div class="popup-content">
+                <h2>Order Placed!</h2>
+                <p>Thank you for your order. We've received your request and will notify you when it's ready.</p>
+                <button id="close-popup-btn" class="cta-button">Okay</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DineEase. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+    
+    <script src="../JS/script.js"></script>
+</body>
+</html>
